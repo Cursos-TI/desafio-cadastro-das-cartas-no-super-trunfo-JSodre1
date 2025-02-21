@@ -147,5 +147,49 @@ int main() {
     } else {
         printf("A Carta Campeã é %s, a Segunda Carta!!!\n", nome_cidade2);
     }
+    printf("-------------------Comparação de Cartas-------------------\n"); // Imprimindo os resultados individuais
+
+    if (populacao_cidade1 > populacao_cidade2){
+        printf("População: Carta 1 Venceu (%d)\n", populacao_cidade1 > populacao_cidade2);
+    } else {
+        printf("População: Carta 2 Venceu (%d)\n", populacao_cidade1 > populacao_cidade2);
+    }
+
+    if (area_cidade1 > area_cidade2){
+        printf("Área: Carta 1 Venceu (%d)\n", area_cidade1 > area_cidade2);
+    } else {
+        printf("Área: Carta 2 Venceu (%d)\n", area_cidade1 > area_cidade2);
+    }
+
+    if (pib_cidade1 > pib_cidade2){
+        printf("PIB: Carta 1 Venceu (%d)\n", pib_cidade1 > pib_cidade2);
+    } else {
+        printf("PIB: Carta 2 Venceu (%d)\n", pib_cidade1 > pib_cidade2);
+    }
+    
+    if (pontos_turisticos_cidade1 > pontos_turisticos_cidade2){
+        printf("Pontos Turísticos: Carta 1 Venceu (%d)\n", pontos_turisticos_cidade1 > pontos_turisticos_cidade2);
+    } else {
+        printf("Pontos Turísticos: Carta 2 Venceu (%d)\n", pontos_turisticos_cidade1 > pontos_turisticos_cidade2);
+    }
+
+    if (densidade_cidade1 > densidade_cidade2){
+        printf("Densidade Populacional: Carta 1 Venceu (%d)\n", densidade_cidade1 > densidade_cidade2);
+    } else {
+        printf("Densidade Populacional: Carta 2 Venceu (%d)\n", densidade_cidade1 > densidade_cidade2);
+    }
+    
+    if (pib_percapta_cidade1 > pib_percapta_cidade2){
+        printf("PIB per Capta: Carta 1 Venceu (%d)\n", pib_percapta_cidade1 > pib_percapta_cidade2);
+    } else {
+        printf("PIB per Capta: Carta 2 Venceu (%d)\n", pib_percapta_cidade1 > pib_percapta_cidade2);
+    }
+
+    if (super_poder1 > super_poder2){
+        printf("Super Poder: Carta 1 Venceu (%d)\n", super_poder1 > super_poder2);
+    } else {
+        printf("Super Poder: Carta 2 Venceu (%d)\n", super_poder1 > super_poder2);
+    }
+
     return 0;
 }

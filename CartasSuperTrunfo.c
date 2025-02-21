@@ -141,11 +141,6 @@ int main() {
     printf("Agora vamos comparar e decidir qual carta é vencedora.\n");
     printf("\n------------------------------------------------------\n");
 
-    if (super_poder1 > super_poder2) {
-        printf("A Carta Campeã é %s, a Primeira Carta!!!\n", nome_cidade1);
-    } else {
-        printf("A Carta Campeã é %s, a Segunda Carta!!!\n", nome_cidade2);
-    }
     printf("-------------------Comparação de Cartas-------------------\n"); // Imprimindo os resultados individuais
 
     if (populacao_cidade1 > populacao_cidade2){
@@ -172,10 +167,10 @@ int main() {
         printf("Pontos Turísticos: Carta 2 Venceu (%d)\n", pontos_turisticos_cidade1 > pontos_turisticos_cidade2);
     }
 
-    if (densidade_cidade1 > densidade_cidade2){
-        printf("Densidade Populacional: Carta 1 Venceu (%d)\n", densidade_cidade1 > densidade_cidade2);
+    if (densidade_cidade1 < densidade_cidade2){
+        printf("Densidade Populacional: Carta 1 Venceu (%d)\n", densidade_cidade1 < densidade_cidade2);
     } else {
-        printf("Densidade Populacional: Carta 2 Venceu (%d)\n", densidade_cidade1 > densidade_cidade2);
+        printf("Densidade Populacional: Carta 2 Venceu (%d)\n", densidade_cidade1 < densidade_cidade2);
     }
     
     if (pib_percapta_cidade1 > pib_percapta_cidade2){

@@ -2,7 +2,6 @@
 Desafio Super Trunfo - Estácio de Sá
 Aluno: Jairçon Freitas Sodré Pereira Júnior
 Nível MESTRE
-Realizando o Cadastro das Cartas
 O Código apresenta erro quando eu tento colocar "Espaço" no nome da cidade
 */
 
@@ -82,7 +81,7 @@ int main() {
     printf("Carta 1\n");
     printf("\nCódigo da Cidade: %c %d\n", codigo_letra_cidade1, codigo_numero_cidade1); // Imprimindo código da Cidade Na mesma linha
     printf("Nome da Cidade: %s\n", nome_cidade1);
-    printf("População da Cidade: %u pessoas\n", populacao_cidade1);
+    printf("População da Cidade: %lu pessoas\n", populacao_cidade1);
     printf("A Densidade Populacional é de: %.2f hab/km²\n", densidade_cidade1);
     printf("Tamanho da Cidade: %.2f km²\n", area_cidade1); // Usando %.2lf para imprimir double com 2 casas decimais
     printf("O PIB da Cidade é de: R$ %.f\n", pib_cidade1); // Adicionando unidade monetária

@@ -23,7 +23,7 @@ int main() {
     int pontos_turisticos_cidade1 = 0;
     float densidade_cidade1 = 0;
     float pib_percapta_cidade1 = 0;
-    float super_poder1 =0;
+    float super_poder1 = 0;
     
 // Segunda Carta
 
@@ -36,7 +36,7 @@ int main() {
     int pontos_turisticos_cidade2 = 0;
     float densidade_cidade2 = 0;
     float pib_percapta_cidade2 = 0;
-    float super_poder2 =0;
+    float super_poder2 = 0;
     
 // Apresentação do Jogo
 

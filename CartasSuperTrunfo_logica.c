@@ -14,8 +14,8 @@ int main() {
 
 // Primeira Carta
 
-    char pais1[50] = ' ';
-    char codigo_letra_cidade1 = ' ';
+    char pais1[20] = "";
+    char codigo_letra_cidade1[3]= "";
     int codigo_numero_cidade1 = 0;
     char nome_cidade1[50] = "";
     unsigned long int populacao_cidade1 = 0;
@@ -28,8 +28,8 @@ int main() {
     
 // Segunda Carta
 
-    char pais2[50] = ' ';
-    char codigo_letra_cidade2 = ' ';
+    char pais2[20] = "";
+    char codigo_letra_cidade2[3] = "";
     int codigo_numero_cidade2 = 0;
     char nome_cidade2[50] = "";
     unsigned long int populacao_cidade2 = 0;
@@ -53,11 +53,11 @@ int main() {
 
 // Entrada de dados da Primeira carta pelo usuário
 
-    printf("Digite o seu País - sem 'ESPAÇOS' (Carta 1): \n");
+    printf("Digite o nome do seu País - sem 'ESPAÇOS' (Carta 1): \n");
     scanf("%s", &pais1);
 
     printf("Digite a Primeira Letra do seu Estado (Carta 1): \n");
-    scanf("%c", &codigo_letra_cidade1);
+    scanf("%s", &codigo_letra_cidade1);
         
     printf("Digite o Número da sua Carta (Carta 1): \n");
     scanf("%d", &codigo_numero_cidade1);
@@ -89,7 +89,7 @@ int main() {
 // Impressão do resultado da PRIMEIRA carta linha a linha
 
     printf("Carta 1\n");
-    printf("\nCódigo da Carta: %c %d\n", codigo_letra_cidade1, codigo_numero_cidade1); // Imprimindo código da Cidade Na mesma linha
+    printf("\nCódigo da Carta: %s %d\n", codigo_letra_cidade1, codigo_numero_cidade1); // Imprimindo código da Cidade Na mesma linha
     printf("Seu País é: %s\n", pais1);
     printf("Nome da Cidade: %s\n", nome_cidade1);
     printf("População da Cidade: %lu pessoas\n", populacao_cidade1);
@@ -103,13 +103,13 @@ int main() {
     printf("\n------------------------------------------------------\n"); // Para melhorar a visulização no terminal
     printf("\nAgora Vamos Cadastrar a Segunda Carta\n");
 
-    // Entrada de dados da Segunda carta pelo usuário
+// Entrada de dados da Segunda carta pelo usuário
 
-    printf("Digite o seu País - sem 'ESPAÇOS' (Carta 2): \n");
+    printf("Digite o nome do seu País - sem 'ESPAÇOS' (Carta 2): \n");
     scanf("%s", &pais2);
 
     printf("\nDigite a Primeira Letra do seu Estado (Carta 2): \n");
-    scanf("%c", &codigo_letra_cidade2);
+    scanf("%s", &codigo_letra_cidade2);
         
     printf("Digite o Número da sua Carta (Carta 2): \n");
     scanf("%d", &codigo_numero_cidade2);
@@ -129,7 +129,7 @@ int main() {
     printf("Digite a quantidade de Pontos Turisticos da sua Cidade (Carta 2): \n");
     scanf("%d", &pontos_turisticos_cidade2);
     
-    // Incremento das variáveis e operadores matemáticos para o desafio AVENTUREIRO
+// Incremento das variáveis e operadores matemáticos para o desafio AVENTUREIRO
 
     densidade_cidade2 = (float) populacao_cidade2 / area_cidade2;
     pib_percapta_cidade2 = pib_cidade2 / populacao_cidade2;

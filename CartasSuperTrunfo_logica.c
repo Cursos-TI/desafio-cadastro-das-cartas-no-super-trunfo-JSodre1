@@ -369,7 +369,19 @@ int main() {
         printf("\n- A soma dos atributos da Carta 1 é: %2.f\n", comparacaoMultipla1);
         printf("\n- A soma dos atributos da Carta 2 é: %2.f\n", comparacaoMultipla2);
         printf("\n------------------------------------------------------\n");
-        printf("\n CARTA 1 GANHOU! Parabnéns!!! Você é o grande vencedor!!!");
+        printf("\n CARTA 1 GANHOU! Parabénns!!! Você é o grande vencedor!!!");
+        printf("Carta 1\n");
+        printf("\nCódigo da Carta: %s %d\n", codigo_letra_cidade1, codigo_numero_cidade1); // Imprimindo código da Cidade Na mesma linha
+        printf("Seu País é: %s\n", pais1);
+        printf("Nome da Cidade: %s\n", nome_cidade1);
+        printf("População da Cidade: %lu pessoas\n", populacao_cidade1);
+        printf("A Densidade Populacional é de: %.2f hab/km²\n", densidade_cidade1);
+        printf("Tamanho da Cidade: %.2f km²\n", area_cidade1); // Usando %.2lf para imprimir double com 2 casas decimais
+        printf("O PIB da Cidade é de: R$ %d\n", pib_cidade1); // Adicionando unidade monetária
+        printf("O PIB per Capta da cidade é de: R$ %.2f\n", pib_percapta_cidade1);
+        printf("Quantidade de Pontos Turísticos: %d\n", pontos_turisticos_cidade1);
+        printf("O Super Poder é de: %.f\n", super_poder1);
+        printf("\n------------------------------------------------------\n"); 
 
     } else if (comparacaoMultipla1 < comparacaoMultipla2){
         printf("\n------------------------------------------------------\n");
@@ -377,6 +389,16 @@ int main() {
         printf("\n- A soma dos atributos da Carta 2 é: %2.f\n", comparacaoMultipla2);
         printf("\n------------------------------------------------------\n");
         printf("\n CARTA 2 GANHOU! Que pena, você perdeu!");
+        printf("\nCódigo da Carta: %c %d\n", codigo_letra_cidade2, codigo_numero_cidade2); // Imprimindo código da Cidade Na mesma linha
+        printf("Seu País é: %s\n", pais2);
+        printf("Nome da Cidade: %s\n", nome_cidade2);
+        printf("População da Cidade: %lu pessoas\n", populacao_cidade2);
+        printf("A Densidade Populacional é de: %.2f hab/km²\n", densidade_cidade2);
+        printf("Tamanho da Cidade: %.2f km²\n", area_cidade2); // Usando %.2lf para imprimir double com 2 casas decimais
+        printf("O PIB da Cidade é de: R$ %.d\n", pib_cidade2); // Adicionando unidade monetária
+        printf("O PIB per Capta da cidade é de: R$ %.2f\n", pib_percapta_cidade2);
+        printf("Quantidade de Pontos Turísticos: %d\n", pontos_turisticos_cidade2);
+        printf("O Super Poder é de: %.f\n", super_poder2);
     } else {
         printf("\n------------------------------------------------------\n");
         printf("\n- A soma dos atributos da Carta 1 é: %2.f\n", comparacaoMultipla1);

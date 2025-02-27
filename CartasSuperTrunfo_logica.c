@@ -43,7 +43,8 @@ int main() {
 // Batalha
     int opcao1, opcao2 = 0;
     int resultado1, resultado2 = 0;
-    double comparacaoMultipla1, comparacaoMultipla2 = 0;
+    int comparacaoMultipla1 = 0;
+    int comparacaoMultipla2 = 0;
         
 // Apresentação do Jogo
 
@@ -188,6 +189,7 @@ int main() {
         printf("Você não pode escolher a mesma OPÇÃO anterior. Volte tudo!");
         exit(0);
     }
+    getchar(); // Para limpar o cache e evitar erro
 
     switch (opcao1){
         case 1: // Disputa pela População
@@ -272,6 +274,11 @@ int main() {
         break;
 
     }
+
+    // -----------------DEBUG----------------------
+    printf("\nValor comparacaoMultipla1 %d\n", comparacaoMultipla1);
+    printf("\nValor comparacaoMultipla2 %d\n", comparacaoMultipla2);
+    // -----------------DEBUG----------------------
 
     resultado1 == 1 ? printf("\nParabéns!!! Você venceu a Primeira disputa individual. Vamos para o próximo atributo.\n") : printf("\nQue pena, você perdeu a Primeira disputa Individual. Vamos para o próximo atributo.\n");
 
@@ -359,15 +366,19 @@ int main() {
         break;
 
     }
+    // -----------------DEBUG----------------------
+    printf("\nValor comparacaoMultipla1 %d\n", comparacaoMultipla1);
+    printf("\nValor comparacaoMultipla2 %d\n", comparacaoMultipla2);
+    // -----------------DEBUG----------------------
 
-    resultado2 == 1 ? printf("\nParabéns!!! Você venceu a Segunda disputa individual.\n") : printf("\nQue pena, você perdeu a Segunda disputa Individual.\n");
+    resultado2 == 1 ? printf("\nParabéns!!! Você venceu a Segunda disputa individual.\n") : printf("\nQue pena, você perdeu a Segunda disputa individual.\n");
     printf("\n------------------------------------------------------\n");
     printf("Chegou a hora da Verdade! Agora vamos fazer a comparação dos dois atributos juntos de ambas as cartas e ver quem é o grande VENCEDOR!!!");
 
     if (comparacaoMultipla1 > comparacaoMultipla2){
         printf("\n------------------------------------------------------\n");
-        printf("\n- A soma dos atributos da Carta 1 é: %2.f\n", comparacaoMultipla1);
-        printf("\n- A soma dos atributos da Carta 2 é: %2.f\n", comparacaoMultipla2);
+        printf("\n- A soma dos atributos da Carta 1 é: %d\n", comparacaoMultipla1);
+        printf("\n- A soma dos atributos da Carta 2 é: %d\n", comparacaoMultipla2);
         printf("\n------------------------------------------------------\n");
         printf("\n CARTA 1 GANHOU! Parabénns!!! Você é o grande vencedor!!!");
         printf("Carta 1\n");
@@ -401,8 +412,8 @@ int main() {
         printf("O Super Poder é de: %.f\n", super_poder2);
     } else {
         printf("\n------------------------------------------------------\n");
-        printf("\n- A soma dos atributos da Carta 1 é: %2.f\n", comparacaoMultipla1);
-        printf("\n- A soma dos atributos da Carta 2 é: %2.f\n", comparacaoMultipla2);
+        printf("\n- A soma dos atributos da Carta 1 é: %d\n", comparacaoMultipla1);
+        printf("\n- A soma dos atributos da Carta 2 é: %d\n", comparacaoMultipla2);
         printf("\n------------------------------------------------------\n");
         printf("\n Inacreditavelmente vocês empataram!");
     }

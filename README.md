@@ -19,6 +19,7 @@ Nível: MESTRE
 
 
 📋 Funcionalidades Principais
+
 Cadastro de cartas com as seguintes propriedades:
 
 População
@@ -45,6 +46,7 @@ Determinação da carta vencedora com base no Super Poder (soma total das propri
 
 
 💻 Como Funciona
+
 O usuário insere as propriedades das cidades para criar as cartas.
 
 Propriedades calculadas, como Densidade Populacional e PIB per Capita, são geradas automaticamente.
@@ -53,6 +55,7 @@ O sistema compara duas cartas escolhidas pelo usuário, exibindo os resultados p
 
 
 🛠️ Tecnologias Utilizadas
+
 Linguagem de Programação: C
 
 Interação via Terminal

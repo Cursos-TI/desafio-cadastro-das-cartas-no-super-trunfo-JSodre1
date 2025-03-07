@@ -4,7 +4,9 @@ Super Trunfo - Países
 
 Super Trunfo - Países é um jogo interativo desenvolvido para terminal. Nele, você cadastra e compara cartas de cidades com base em suas propriedades, como população e PIB. Este projeto foi implementado no nível Mestre, com funcionalidades avançadas de comparação de cartas.
 
+
 📚 Informações da Disciplina
+
 Desafio: Lógica do Super Trunfo
 
 Instituição: Estácio de Sá
